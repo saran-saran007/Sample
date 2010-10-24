@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>QutinoPrototypeDevise</title>
+  <%= stylesheet_link_tag  "design" %>
+  <%= javascript_include_tag :defaults %>
+  <%= csrf_meta_tag %>
+</head>
+<body>
+  <div class="remember_me">
+  <% if user_signed_in? %>
+     Signed in as <%= current_user.email %>. Not you?       <%= link_to "Sign out", destroy_user_session_path %>
+  <% else %>
+ signin to  continue
+  <% end %>
+ </div>
+<%= yield %>
+
+</body>
+</html>

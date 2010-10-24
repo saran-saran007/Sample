@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Qutino</title>
+  
+  <%= stylesheet_link_tag  "design" %>
+  <%= javascript_include_tag :defaults %>
+  <%= csrf_meta_tag %>
+</head>
+
+<body>
+<div id="wrapper">
+	<div class="logo">
+    	<a href="index.html"><div class="qutino_img"> </div></a>
+	</div>
+    	<div class="hrline_1">
+    	</div>
+    		<div class="hrline_top">
+        	</div>
+             
+                	<div class="sign_in_form">
+                          
+                         <%= form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f| %>
+                          <p><%= f.label :email %>
+                          
+                            <%= f.text_field :email %>
+                                               
+                         <%= f.label :password %>
+                          <%= f.password_field :password %>
+                          <%= f.submit "Sign in" %></p>
+                          <div class="remember_me">
+                          <% if devise_mapping.rememberable? -%>
+                           <p><%= f.check_box :remember_me %> <%= f.label :remember_me %></p>
+                          <% end -%>
+                           <% end %><%#- End of user signin form %>
+                          </div>
+                       
+                        </div>
+                    	<div class="sign_up">
+                		</div>
+                        	<div class="sign_up_form">
+                            <%= form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f| %>
+                                <%= devise_error_messages! %>
+
+                                <p><%= f.label :email %><br />
+                                <%= f.text_field :email %></p>
+
+                                <p><%= f.label :password %><br />
+                                <%= f.password_field :password %></p>
+
+                                <p><%= f.label :password_confirmation %><br />
+                                <%= f.password_field :password_confirmation %></p>
+
+                           <p><%= f.submit "Sign up" %></p>
+                          <% end %>  <%#- End of user registratio form %>
+                            </div>
+					<div class="seo_content_img">
+                    </div>
+        	<div class="web_own_img">
+            </div>
+	<div class="vr_line">
+    </div>
+</div>
+</body>
+</html>

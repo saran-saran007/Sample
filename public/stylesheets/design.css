@@ -1,0 +1,180 @@
+/* 
+    Document   : design
+    Created on : 24 Oct, 2010, 11:17:34 AM
+    Author     : saran
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+
+/* CSS Document */
+/* Background blue color */
+body{
+margin:0px;
+padding:0px;
+background-color:#FFFFFF;
+background-image:url(images/bg.jpg);
+background-repeat:repeat-x;
+}
+/* Hover CSS */
+a{
+outline:none
+}
+a:hover{
+text-decoration:none
+}
+/* Content Area Alignment */
+#wrapper{
+width:1000px;
+height:650px;
+margin-left:auto;
+margin-right:auto;
+margin-top:0px;
+margin-bottom:auto;
+}
+/* Logo */
+.logo{
+width:227px;
+height:76px;
+margin-left:40px;
+margin-top:40px;
+position:absolute;
+}
+/* Horizontal line seperation */
+.hrline_top{
+width:967px;
+height:1px;
+margin-left:13px;
+margin-top:150px;
+background-image:url(images/hrline_top.png);
+background-repeat:no-repeat;
+position:absolute;
+}
+.hrline_1{
+width:607px;
+height:1px;
+margin-left:365px;
+margin-top:90px;
+background-image:url(images/hrline_1.png);
+background-repeat:no-repeat;
+position:absolute;
+}
+.sign_in{
+width:67px;
+height:22px;
+margin-left:620px;
+margin-top:60px;
+background-image:url(images/sign_in.png);
+background-repeat:no-repeat;
+position:absolute;
+}
+.sign_up{
+width:87px;
+height:22px;
+margin-left:700px;
+margin-top:190px;
+background-image:url(images/sign_up.png);
+background-repeat:no-repeat;
+position:absolute;
+}
+.text_field{
+width:15px;
+height:24px;
+background-image:url(images/field.png);
+background-repeat:no-repeat;
+}
+.text_box{
+border:0px;
+background-color:transparent;
+width:185px;
+height:20px;
+margin-left:2px;
+font-size:11px;
+overflow:hidden;
+color:#000000;
+font-family:'Verdana', Helvetica, sans-serif;
+outline:none;
+}
+
+.remember_me{
+width:570px;
+height:24px;
+margin-left :500px;
+margin-top:0px;
+position:absolute;
+}
+
+.sign_in_form{
+width:770px;
+height:24px;
+margin-left :170px;
+margin-top:1px;
+position:absolute;
+}
+
+.font{
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size:11px;
+color:#000;
+}
+.font_signup{
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size:11px;
+color:#000;
+text-align:right;
+}
+.sign_up_form{
+width:380px;
+height:400px;
+margin-left:545px;
+margin-top:240px;
+position:absolute;
+}
+.buttons_signup{
+width:180px;
+height:23px;
+margin-left:100px;
+position:absolute;
+}
+.seo_content_img{
+width:358px;
+height:47px;
+background-image:url(images/seo.png);
+background-repeat:no-repeat;
+margin-top:190px;
+margin-left:50px;
+position:absolute;
+}
+
+.qutino_img{
+width:358px;
+height:70px;
+background-image:url(images/qutino.png);
+background-repeat:no-repeat;
+margin-top:10px;
+margin-left:50px;
+position:absolute;
+}
+.web_own_img{
+width:250px;
+height:56px;
+background-image:url(images/webown.png);
+background-repeat:no-repeat;
+margin-top:390px;
+margin-left:50px;
+position:absolute;
+}
+.vr_line{
+width:1px;
+height:250px;
+background-color:#CCCCCC;
+background-repeat:no-repeat;
+margin-top:240px;
+margin-left:500px;
+position:absolute;
+}
