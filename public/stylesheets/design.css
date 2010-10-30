@@ -135,6 +135,12 @@ margin-left:545px;
 margin-top:240px;
 position:absolute;
 }
+
+.post_index{
+width:200px;
+height:10px;
+text-align:center;
+}
 .buttons_signup{
 width:180px;
 height:23px;

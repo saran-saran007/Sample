@@ -6,4 +6,7 @@ class User < ActiveRecord::Base
 
   # Setup accessible (or protected) attributes for your model
   attr_accessible :email, :password, :password_confirmation, :remember_me
+  has_many :posts
+  has_many :tasks # Fk poiting to tasks bidded by the user
+                  # Task owner user can be derived from post's owner
 end

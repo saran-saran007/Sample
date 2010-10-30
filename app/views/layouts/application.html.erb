@@ -7,13 +7,14 @@
   <%= csrf_meta_tag %>
 </head>
 <body>
-  <div class="remember_me">
-  <% if user_signed_in? %>
-     Signed in as <%= current_user.email %>. Not you?       <%= link_to "Sign out", destroy_user_session_path %>
-  <% else %>
- signin to  continue
-  <% end %>
- </div>
+   <% if user_signed_in? %>
+     Signed in as <%= current_user.email %>.
+     <%= link_to "Sign out", destroy_user_session_path %>  <br />
+     <%= link_to "My Posts", my_posts_path %>
+     <%= link_to "Create Post", new_post_path %>
+     <%= link_to "Show All posts", posts_path %>
+   <% end %>
+
 <%= yield %>
 
 </body>

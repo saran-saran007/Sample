@@ -1,0 +1,27 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  post_id: 1
+  user_id: 1
+  task_state: 1
+  page_visits: MyString
+  geo_location: MyString
+  alexa_rank: MyString
+  g_index: MyString
+  y_index: MyString
+  b_index: MyString
+  gpr: 1
+  bid_count: 1
+
+two:
+  post_id: 1
+  user_id: 1
+  task_state: 1
+  page_visits: MyString
+  geo_location: MyString
+  alexa_rank: MyString
+  g_index: MyString
+  y_index: MyString
+  b_index: MyString
+  gpr: 1
+  bid_count: 1

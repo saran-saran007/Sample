@@ -1,29 +1,23 @@
-<h1>Listing posts</h1>
+<h2>All Active Posts </h2>
 
 <table>
   <tr>
-    <th>User</th>
+    <th>Created by</th>
     <th>Sell or buy</th>
     <th>Title</th>
     <th>Body</th>
-    <th></th>
-    <th></th>
-    <th></th>
+    <th>View</th>
   </tr>
-
+<div class ="post_index" >
 <% @posts.each do |post| %>
   <tr>
-    <td><%= post.user_id %></td>
-    <td><%= post.sell_or_buy %></td>
-    <td><%= post.title %></td>
-    <td><%= post.body %></td>
-    <td><%= link_to 'Show', post %></td>
-    <td><%= link_to 'Edit', edit_post_path(post) %></td>
-    <td><%= link_to 'Destroy', post, :confirm => 'Are you sure?', :method => :delete %></td>
+   <% post_owner = User.find(post.user_id) %>
+   <td><%= post_owner.email %> </td>
+   <td><%= post.sell_or_buy %></td>
+   <td><%= post.title %></td>
+   <td><%= post.body %> </td>
+   <td><%= link_to 'Show', post %></td>
   </tr>
+</div>
 <% end %>
 </table>
-
-<br />
-
-<%= link_to 'New Post', new_post_path %>

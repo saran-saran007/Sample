@@ -1,0 +1,26 @@
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Sell or buy</th>
+    <th>Body</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<br /><b> Posts created by me </b><br />
+ <% if user_signed_in? %>
+    <% @user = current_user %>
+    <% for post in @user.posts do %>
+       <tr>
+       <td><%= post.title %></td>
+       <td><%= post.sell_or_buy %></td>
+       <td><%= post.body %></td>
+       <td><%= link_to 'Show', post %></td>
+       <td><%= link_to 'Edit/update', edit_post_path(post) %></td>
+       <td><%= link_to 'Destroy', post, :confirm => 'Are you sure?', :method => :delete %></td>
+       </tr>
+     <% end %>
+  <% end %>
+</table>
+

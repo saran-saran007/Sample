@@ -1,0 +1,27 @@
+  <%= form.fields_for :tasks do |task_form| %>
+   <p>
+     <br /><%= task_form.label :page_visits, "Page Visits Targeted" %>
+     <%= task_form.text_field :page_visits  %>
+
+     <br /><%= task_form.label :geo_location, "Target Geo Location" %>
+     <%= task_form.text_field :geo_location  %>
+
+     <br /><%= task_form.label :alexa_rank, "Alexa Rank Range" %>
+     <%= task_form.text_field :alexa_rank  %>
+
+     <br /><%= task_form.label :g_index, " Indexed Pages Google" %>
+     <%= task_form.text_field :g_index  %>
+
+     <br /><%= task_form.label :y_index, " Indexed Pages yahoo" %>
+     <%= task_form.text_field :y_index  %>
+
+     <br /><%= task_form.label :b_index, " Indexed Pages Bing" %>
+     <%= task_form.text_field :b_index  %>
+
+     <br /><%= task_form.label :gpr, "Target Google Pr " %>
+     <%= task_form.text_field :gpr  %>
+
+
+   </p>
+  <% end %>
+

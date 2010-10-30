@@ -10,13 +10,29 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20101024043832) do
+ActiveRecord::Schema.define(:version => 20101030054528) do
 
   create_table "posts", :force => true do |t|
     t.integer  "user_id"
     t.integer  "sell_or_buy"
     t.string   "title"
     t.text     "body"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "tasks", :force => true do |t|
+    t.integer  "post_id"
+    t.integer  "user_id"
+    t.integer  "task_state"
+    t.string   "page_visits"
+    t.string   "geo_location"
+    t.string   "alexa_rank"
+    t.string   "g_index"
+    t.string   "y_index"
+    t.string   "b_index"
+    t.integer  "gpr"
+    t.integer  "bid_count"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

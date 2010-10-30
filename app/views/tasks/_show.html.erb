@@ -1,0 +1,24 @@
+<% for task in @post.tasks %>
+<table>
+<tr>
+  <th>Page Visits Expected:</th>
+  <th>Targeted Geo Location:</th>
+  <th>Alexa rank Range Expected</th>
+  <th># of Pages to be indexed in Google</th>
+  <th># of Pages to be indexed in yahoo</th>
+  <th># of Pages to be indexed in Bing</th>
+  <th>Targeted Google Pr</th>
+  <th>Current # of Bids</th>
+</tr>
+<tr>
+   <td> <%= task.page_visits %></td>
+   <td><%= task.geo_location %></td>
+   <td><%= task.alexa_rank %></td>
+   <td><%= task.g_index %></td>
+   <td><%= task.y_index %></td>
+   <td><%= task.b_index %></td>
+   <td><%= task.gpr %></td>
+   <td><%= task.bid_count %></td>
+</tr>
+<% end %>
+</table>

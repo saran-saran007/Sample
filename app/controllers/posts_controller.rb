@@ -26,7 +26,7 @@ class PostsController < ApplicationController
   # GET /posts/new.xml
   def new
     @post = Post.new
-
+    @post.tasks.build #put back because using this in view causes new empty task displayed even in edit action
     respond_to do |format|
       format.html # new.html.erb
       format.xml  { render :xml => @post }
