@@ -28,3 +28,4 @@ gem 'devise' , '1.1.3'
 # group :development, :test do
 #   gem 'webrat'
 # end
+test
